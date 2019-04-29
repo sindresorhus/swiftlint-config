@@ -7,3 +7,13 @@ SwiftLint has a lot of [rules](https://github.com/realm/SwiftLint) and it takes 
 ## Usage
 
 Download the [`.swiftlint.yml` file](https://raw.githubusercontent.com/sindresorhus/swiftlint-sindre/master/.swiftlint.yml) into the root of your project and then follow the [SwiftLint setup instructions](https://github.com/realm/SwiftLint#installation).
+
+## Badge
+
+Show off that you're using this config.
+
+```
+[![SwiftLint Sindre](https://img.shields.io/badge/SwiftLint-Sindre-hotpink.svg)](https://github.com/sindresorhus/swiftlint-sindre)
+```
+
+[![SwiftLint Sindre](https://img.shields.io/badge/SwiftLint-Sindre-hotpink.svg)](https://github.com/sindresorhus/swiftlint-sindre)
