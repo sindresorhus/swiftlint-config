@@ -137,8 +137,6 @@ whitelist_rules:
 analyzer_rules:
   - unused_declaration
   - unused_import
-force_cast: warning
-force_unwrapping: warning
 number_separator:
   minimum_length: 5
 object_literal:
@@ -164,4 +162,3 @@ identifier_name:
     - 'x2'
     - 'y1'
     - 'y2'
-
