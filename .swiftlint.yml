@@ -79,6 +79,7 @@ whitelist_rules:
   - opening_brace
   - operator_usage_whitespace
   - operator_whitespace
+  - orphaned_doc_comment
   - overridden_super_call
   - pattern_matching_keywords
   - prefer_self_type_over_type_of_self
@@ -166,11 +167,14 @@ identifier_name:
     - 'y2'
 custom_rules:
   no_nsrect:
-    name: 'Use CGRect instead of NSRect'
-    regex: '^NSRect$'
+    regex: '\bNSRect\b'
+    match_kinds: typeidentifier
+    message: 'Use CGRect instead of NSRect'
   no_nssize:
-    name: 'Use CGSize instead of NSSize'
-    regex: '^NSSize$'
+    regex: '\bNSSize\b'
+    match_kinds: typeidentifier
+    message: 'Use CGSize instead of NSSize'
   no_nspoint:
-    name: 'Use CGPoint instead of NSPoint'
-    regex: '^NSPoint$'
+    regex: '\bNSPoint\b'
+    match_kinds: typeidentifier
+    message: 'Use CGPoint instead of NSPoint'
