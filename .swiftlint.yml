@@ -75,17 +75,16 @@ whitelist_rules:
   - notification_center_detachment
   - nsobject_prefer_isequal
   - number_separator
-  - object_literal
   - opening_brace
   - operator_usage_whitespace
   - operator_whitespace
   - orphaned_doc_comment
   - overridden_super_call
-  - pattern_matching_keywords
   - prefer_self_type_over_type_of_self
   - private_action
   - private_outlet
   - private_unit_test
+  - prohibited_nan_comparison
   - prohibited_super_call
   - protocol_property_accessors_order
   - reduce_boolean
@@ -99,6 +98,7 @@ whitelist_rules:
   - redundant_type_annotation
   - redundant_void_return
   - required_enum_case
+  - return_value_from_void_function
   - return_arrow_whitespace
   - shorthand_operator
   - sorted_first_last
@@ -116,6 +116,7 @@ whitelist_rules:
   - trailing_newline
   - trailing_semicolon
   - trailing_whitespace
+  - tuple_pattern
   - unavailable_function
   - unneeded_break_in_switch
   - unneeded_parentheses_in_closure_argument
@@ -142,10 +143,6 @@ analyzer_rules:
   - unused_import
 number_separator:
   minimum_length: 5
-object_literal:
-  image_literal: false
-discouraged_object_literal:
-  color_literal: false
 identifier_name:
   max_length:
     warning: 100
