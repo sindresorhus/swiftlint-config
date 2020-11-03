@@ -12,6 +12,7 @@ whitelist_rules:
   - colon
   - comma
   - compiler_protocol_init
+  - computed_accessors_order
   - conditional_returns_on_newline
   - contains_over_filter_count
   - contains_over_filter_is_empty
@@ -43,6 +44,7 @@ whitelist_rules:
   - flatmap_over_map_reduce
   - for_where
   - generic_type_name
+  - ibinspectable_in_extension
   - identical_operands
   - identifier_name
   - implicit_getter
@@ -81,6 +83,7 @@ whitelist_rules:
   - orphaned_doc_comment
   - overridden_super_call
   - prefer_self_type_over_type_of_self
+  - prefer_zero_over_explicit_init
   - private_action
   - private_outlet
   - private_unit_test
@@ -119,6 +122,7 @@ whitelist_rules:
   - tuple_pattern
   - unavailable_function
   - unneeded_break_in_switch
+  - unneeded_notification_center_removal
   - unneeded_parentheses_in_closure_argument
   - unowned_variable_capture
   - untyped_error_in_catch
@@ -162,6 +166,11 @@ identifier_name:
     - 'x2'
     - 'y1'
     - 'y2'
+deployment_target:
+  macOS_deployment_target: '10.15'
+  iOS_deployment_target: '13'
+  tvOS_deployment_target: '13'
+  watchOS_deployment_target: '6'
 custom_rules:
   no_nsrect:
     regex: '\bNSRect\b'
@@ -175,3 +184,9 @@ custom_rules:
     regex: '\bNSPoint\b'
     match_kinds: typeidentifier
     message: 'Use CGPoint instead of NSPoint'
+  swiftui_state_private:
+    regex: '@(State|StateObject)\s+var'
+    message: "SwiftUI @State/@StateObject properties should be private"
+  final_class:
+    regex: '^class [a-zA-Z\d]+[^{]+\{'
+    message: "Classes should be marked as final whenever possible. If you actually need it to be subclassable, just add `// swiftlint:disable:next final_class`."
