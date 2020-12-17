@@ -1,4 +1,4 @@
-# swiftlint-sindre
+# swiftlint-config
 
 > Good starter config for [SwiftLint](https://github.com/realm/SwiftLint)
 
@@ -6,14 +6,22 @@ SwiftLint has a lot of [rules](https://github.com/realm/SwiftLint) and it takes 
 
 ## Usage
 
-Download the [`.swiftlint.yml` file](https://raw.githubusercontent.com/sindresorhus/swiftlint-sindre/master/.swiftlint.yml) into the root of your project and then follow the [SwiftLint setup instructions](https://github.com/realm/SwiftLint#installation).
+1. Create a `.swiftlint.yml` file in the root of your project with the following:
+
+```
+parent_config: https://github.com/sindresorhus/swiftlint-config/raw/master/.swiftlint.yml
+```
+
+*(Replace `master` with a specific commit hash if you want predictable builds)*
+
+2. Follow the [SwiftLint setup instructions](https://github.com/realm/SwiftLint#installation).
 
 ## Badge
 
 Show off that you're using this config.
 
 ```
-[![SwiftLint Sindre](https://img.shields.io/badge/SwiftLint-Sindre-hotpink.svg)](https://github.com/sindresorhus/swiftlint-sindre)
+[![sindresorhus's SwiftLint config](https://img.shields.io/badge/SwiftLint-sindresorhus-hotpink.svg)](https://github.com/sindresorhus/swiftlint-config)
 ```
 
-[![SwiftLint Sindre](https://img.shields.io/badge/SwiftLint-Sindre-hotpink.svg)](https://github.com/sindresorhus/swiftlint-sindre)
+[![sindresorhus's SwiftLint config](https://img.shields.io/badge/SwiftLint-sindresorhus-hotpink.svg)](https://github.com/sindresorhus/swiftlint-config)
