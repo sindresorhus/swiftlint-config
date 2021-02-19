@@ -9,7 +9,7 @@ SwiftLint has a lot of [rules](https://github.com/realm/SwiftLint) and it takes 
 1. Create a `.swiftlint.yml` file in the root of your project with the following:
 
 ```
-parent_config: https://github.com/sindresorhus/swiftlint-config/raw/master/.swiftlint.yml
+parent_config: https://raw.githubusercontent.com/sindresorhus/swiftlint-config/main/.swiftlint.yml
 ```
 
 *(Replace `master` with a specific commit hash if you want predictable builds)*
