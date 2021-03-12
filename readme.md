@@ -12,7 +12,7 @@ SwiftLint has a lot of [rules](https://github.com/realm/SwiftLint) and it takes 
 parent_config: https://raw.githubusercontent.com/sindresorhus/swiftlint-config/main/.swiftlint.yml
 ```
 
-*(Replace `master` with a specific commit hash if you want predictable builds)*
+*(Replace `main` with a specific commit hash if you want predictable builds)*
 
 2. Follow the [SwiftLint setup instructions](https://github.com/realm/SwiftLint#installation).
 
