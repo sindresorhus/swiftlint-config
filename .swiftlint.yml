@@ -146,6 +146,7 @@ only_rules:
   - unused_setter_value
   - valid_ibinspectable
   - vertical_parameter_alignment
+  - vertical_parameter_alignment_on_call
   - vertical_whitespace_closing_braces
   - vertical_whitespace_opening_braces
   - void_function_in_ternary
@@ -155,9 +156,10 @@ only_rules:
   - yoda_condition
 analyzer_rules:
   - capture_variable
+  - typesafe_array_init
+  - unneeded_synthesized_initializer
   - unused_declaration
   - unused_import
-  - typesafe_array_init
 for_where:
   allow_for_as_filter: true
 number_separator:
@@ -209,7 +211,7 @@ custom_rules:
     message: 'Use Double instead of CGFloat'
   swiftui_state_private:
     regex: '@(ObservedObject|EnvironmentObject)\s+var'
-    message: 'SwiftUI @ObservedObject/@EnvironmentObject properties should be private'
+    message: 'SwiftUI @ObservedObject and @EnvironmentObject properties should be private'
   swiftui_environment_private:
     regex: '@Environment\(\\\.\w+\)\s+var'
     message: 'SwiftUI @Environment properties should be private'
